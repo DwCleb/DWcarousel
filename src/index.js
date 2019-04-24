@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import colors from './theme/colors'
-import Carousel from 'react-native-carousel'
+import Carousel from 'react-native-Carousel'
 import { scale } from './theme/metrics';
 import Pages from './pages'
 
@@ -22,7 +22,7 @@ type Props = {
   loop?: Boolean,
 }
 
-class DWcarousel extends Component<Props> {
+class Carousel extends Component<Props> {
 
   render() {
     const {
@@ -55,7 +55,7 @@ class DWcarousel extends Component<Props> {
         indicatorOffset={indicatorOffset} // Indicator relative position from top or bottom
         inactiveIndicatorText={inactiveIndicatorText} // Inactive indicator content ( You can customize to use any Unicode character )
         indicatorText= {indicatorText} // Active indicator content ( You can customize to use any Unicode character )
-        animate={animate} // Enable carousel autoplay
+        animate={animate} // Enable Carousel autoplay
         delay={delay} // Set Animation delay between slides
         loop={loop} // Allow infinite looped animation. Depends on Prop {...animate} set to true.
         containerStyle={containerStyle}
@@ -66,13 +66,13 @@ class DWcarousel extends Component<Props> {
   }
 }
 
-DWcarousel.Page = Pages
+Carousel.Page = Pages
 
 /**
  * Default props by default ligth theme
  */
 
-DWcarousel.defaultProps = {
+Carousel.defaultProps = {
   initialPage: 0,
   hideIndicators: false, 
   indicatorColor: colors.white, 
@@ -90,4 +90,4 @@ DWcarousel.defaultProps = {
   pageStyle: {},
 }
 
-export default DWcarousel
+export default Carousel

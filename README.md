@@ -1,15 +1,15 @@
 
-## <a name="section-dwcarousel"> DWcarousel 
+## <a name="section-Carousel"> Carousel 
 ### Description
 
-A carrosel container component.
+A carousel container component.
 
 ### Props
 
 | Name     | Type   | Required | Default value | Description                                                                                                                  |
 | -------- | ------ | -------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| DWcarousel.Page      | `React.Node`  | `true`  | -         | A component that will be rendered the pages `DWcarousel`|
-| children              | `React.Node`  | `false` | `null`    | A component that will be rendered inside the `DWcarousel.Page`. |
+| Carousel.Page      | `React.Node`  | `true`  | -         | A component that will be rendered the pages `Carousel`|
+| children              | `React.Node`  | `false` | `null`    | A component that will be rendered inside the `Carousel.Page`. |
 | initialPage           | `Integer`     | `false` | 0         | Set a initial page |
 | hideIndicators        | `Boolean`     | `false` | `false`   | Set to true to hide the indicators |
 | indicatorColor        | `String`      | `false` | `#FFFFFF` | Active indicator color |
@@ -20,41 +20,42 @@ A carrosel container component.
 | indicatorOffset       | `Float`       | `false` | 0         | Indicator relative position from top or bottom |
 | inactiveIndicatorText | `String`      | `false` | '•'       | Inactive indicator content ( You can customize to use any Unicode character ) |
 | indicatorText         | `String`      | `false` | '•'       | Active indicator content ( You can customize to use any Unicode character ) |
-| animate               | `Boolean`     | `false` | `false`   | Enable carousel autoplay |
+| animate               | `Boolean`     | `false` | `false`   | Enable Carousel autoplay |
 | delay                 | `Integer`     | `false` | 1000      | Set Animation delay between slides |
 | loop                  | `Boolean`     | `false` | `false`   | Allow infinite looped animation. Depends on Prop {...animate} set to true. |
-| containerStyle        | `TStyle`      | `false` | {}        | Style container - component `BBCarrosel` |
-| pageStyle             | `TStyle`      | `false` | {}        | Style container - component `DWcarousel.Page` |
+| containerStyle        | `TStyle`      | `false` | {}        | Style container - component `Carousel` |
+| pageStyle             | `TStyle`      | `false` | {}        | Style container - component `Carousel.Page` |
 
 
 ### Usage example
 
 ```javascript
+  import Carousel from 'react-native-dw-tooltip'
   ...
 
   render() {
     ...
     return (
-      <DWcarousel
+      <Carousel
         indicatorColor="red"
       >
-        <DWcarousel.Page>
+        <Carousel.Page>
           <View>
             <Text>Content 1 - Page 1</Text>
           </View>
           <View>
             <Text>Content 2 - Page 1</Text>
           </View>
-        </DWcarousel.Page>
-        <DWcarousel.Page>
+        </Carousel.Page>
+        <Carousel.Page>
           <View>
             <Text>Content 1 - Page 2</Text>
           </View>
           <View>
             <Text>Content 2 - Page 2</Text>
           </View>
-        </DWcarousel.Page>
-      </DWcarousel>
+        </Carousel.Page>
+      </Carousel>
     )
   ...
 ```

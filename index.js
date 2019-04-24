@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import DWcarousel from './src';
+import Carousel from './src';
 
-AppRegistry.registerComponent('DWcarousel', () => DWcarousel);
+AppRegistry.registerComponent('Carousel', () => Carousel);

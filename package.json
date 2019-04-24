@@ -1,7 +1,7 @@
 {
-  "name": "DWcarousel",
+  "name": "react-native-dw-carousel",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.0.0",
     "react-native": "0.51.0",
-    "react-native-carousel": "^0.11.0"
+    "react-native-Carousel": "^0.11.0"
   },
   "devDependencies": {
     "babel-jest": "24.7.1",
@@ -19,5 +19,22 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "description": "A carousel container component.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DwCleb/Carousel.git"
+  },
+  "keywords": [
+    "Carousel",
+    "react-native",
+    "react"
+  ],
+  "author": "Cleber Jr - dwcleb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DwCleb/Carousel/issues"
+  },
+  "homepage": "https://github.com/DwCleb/Carousel#readme"
 }
