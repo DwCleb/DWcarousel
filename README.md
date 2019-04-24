@@ -30,7 +30,7 @@ A carousel container component.
 ### Usage example
 
 ```javascript
-  import Carousel from 'react-native-dw-tooltip'
+  import Carousel from 'react-native-dw-carousel'
   ...
 
   render() {
